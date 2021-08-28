@@ -34,4 +34,7 @@ class UTestShaderBlueprintLibrary : public UBlueprintFunctionLibrary
 		FLinearColor MyColor, 
 		UTexture* MyTexture, 
 		FMyShaderStructData ShaderStructData);
+	
+	UFUNCTION(BlueprintCallable, Category = "ShaderTestPlugin", meta = (WorldContext = "WorldContextObject"))
+	static void TextureWriting(UTexture2D* TextureToBeWritten, AActor* selfref);
 };

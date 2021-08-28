@@ -1,11 +1,11 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
+#include "ShaderTestPlugin.h"
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 #include "Interfaces/IPluginManager.h"
 #include "Misc/Paths.h"
 #include "ShaderCore.h"
-#include "ShaderTestPlugin.h"
 
 #define LOCTEXT_NAMESPACE "FShaderTestPluginModule"
 
