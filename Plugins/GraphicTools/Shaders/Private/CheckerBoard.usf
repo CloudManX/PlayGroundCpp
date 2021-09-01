@@ -1,0 +1,13 @@
+#include "Engine/Public/Platform.ush"
+
+RWTexture2D<float4> RWOutputSurface;
+
+[numthreads(32, 32, 1)]
+void mainCS(
+    uint3 GroupID: SV_GroupID,
+    uint3 DispatchThreadID: SV_DispatchThreadID,
+    uint3 GroupThreadID: SV_GroupID
+)
+{
+    RWOutputSurface[DispatchThreadID.xy] = float4(1, 0, 0, 1);
+}
