@@ -36,5 +36,12 @@ class UTestShaderBlueprintLibrary : public UBlueprintFunctionLibrary
 		FMyShaderStructData ShaderStructData);
 	
 	UFUNCTION(BlueprintCallable, Category = "ShaderTestPlugin", meta = (WorldContext = "WorldContextObject"))
-	static void TextureWriting(UTexture2D* TextureToBeWritten, AActor* selfref);
+	static void TextureWriting(UTexture2D* TextureToBeWritten, AActor* SelfRef);
+
+	UFUNCTION(BlueprintCallable, Category = "ShaderTestPlugin", meta = (WorldContext = "WorldContextObject"))
+	static void DrawComputeShaderResult(
+		class UTextureRenderTarget2D* ComputedRenderTarget, 
+		AActor* Ac,
+		FMyShaderStructData ShaderStructData
+		);
 };

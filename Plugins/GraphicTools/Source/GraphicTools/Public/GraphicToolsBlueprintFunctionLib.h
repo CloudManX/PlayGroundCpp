@@ -18,7 +18,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "SLSGraphicTools", meta = (WorldContext = "WorldContextObject"))
 	static void DrawCheckerBoard(
 		const UObject* WorldContextObject,
-		class UTextureRenderTarget2D* OutputRenderOutput
+		class UTextureRenderTarget2D* OutputRenderTarget
 	);
 };
 
